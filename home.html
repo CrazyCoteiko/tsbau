@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220806152943">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220806193607">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,7 +84,9 @@
 						<!-- Двигающееся часть слайдера -->
 						<div class="start__wrapper swiper-wrapper">
 							<!-- Слайд -->
-							<div class="start__slide swiper-slide"><picture><source srcset="img/first-page/slider-img.webp" type="image/webp"><img class="start__img" src="img/first-page/slider-img.jpg" alt=""></picture></div>
+							<div class="start__slide swiper-slide"><picture><source srcset="img/first-page/slider-img.webp" type="image/webp"><img class="start__img" src="img/first-page/slider-img.jpg" alt=""></picture>
+
+							</div>
 							<div class="start__slide swiper-slide"><picture><source srcset="img/first-page/slider-img.webp" type="image/webp"><img class="start__img" src="img/first-page/slider-img.jpg" alt=""></picture></div>
 						</div>
 						<!-- Если нужна навигация (влево/вправо) -->
@@ -228,10 +230,19 @@
 						<div class="works__wrapper swiper-wrapper">
 							<!-- Слайд -->
 							<div class="works__slide swiper-slide"><picture><source srcset="img/works/011.webp" type="image/webp"><img class="works__img" src="img/works/011.jpg" alt=""></picture>
+								<div class="works__overlay">
+									<div class="works__text-overlay">Painting</div>
+								</div>
 							</div>
 							<div class="works__slide swiper-slide"><picture><source srcset="img/works/022.webp" type="image/webp"><img class="works__img" src="img/works/022.jpg" alt=""></picture>
+								<div class="works__overlay">
+									<div class="works__text-overlay">Painting</div>
+								</div>
 							</div>
 							<div class="works__slide swiper-slide"><picture><source srcset="img/works/033.webp" type="image/webp"><img class="works__img" src="img/works/033.jpg" alt=""></picture>
+								<div class="works__overlay">
+									<div class="works__text-overlay">Painting</div>
+								</div>
 							</div>
 						</div>
 
@@ -295,6 +306,39 @@
 				</div>
 			</div>
 
+			<div class="hire">
+				<div class="hire__container">
+					<div class="hire__block-title title-block">
+						<div class="title-block__main">Hire the best professionals</div>
+					</div>
+					<form class="hire__form" action="">
+						<div class="hire__line">
+							<div class="hire__wrap-input">
+								<input class="hire__input" type="text" placeholder="Name">
+							</div>
+							<div class="hire__wrap-input">
+								<input class="hire__input" type="number" placeholder="Phone Number">
+							</div>
+						</div>
+
+						<div class="hire__line">
+							<div class="hire__wrap-input">
+								<input class="hire__input" type="text" placeholder="Zip Code*">
+							</div>
+							<div class="hire__wrap-input">
+								<select class="hire__select" name="select" id="">
+									<option value="value1">Service 1</option>
+									<option value="value1">Service 2</option>
+									<option value="value1">Service 3</option>
+									<option value="value1">Service 4</option>
+								</select>
+							</div>
+						</div>
+						<button class="hire__button button">Send now</button>
+					</form>
+				</div>
+			</div>
+
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
@@ -311,7 +355,7 @@
 		</div>
 	</div>
 </div> -->
-	<script src="js/app.min.js?_v=20220806152943"></script>
+	<script src="js/app.min.js?_v=20220806193607"></script>
 </body>
 
 </html>

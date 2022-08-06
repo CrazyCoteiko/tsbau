@@ -779,6 +779,15 @@ h6 {
 
 .works__slide {
   height: 100%;
+  position: relative;
+  isolation: isolate;
+}
+
+.works__slide:hover .works__overlay {
+  opacity: 1;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
 }
 
 .works__img {
@@ -795,6 +804,45 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-bottom: 90px;
+}
+
+.works__overlay {
+  background: #555555;
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  -webkit-transition: all ease-out 0.3s;
+  -o-transition: all ease-out 0.3s;
+  transition: all ease-out 0.3s;
+}
+
+.works__overlay:before {
+  content: "";
+  margin: 34% auto 20px;
+  display: block;
+  width: 50px;
+  height: 50px;
+  background: url("../img/works/overlay.svg") center no-repeat;
+}
+
+.works__text-overlay {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 125.9%;
+  text-align: center;
+  letter-spacing: 0.195em;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+  color: #FFFFFF;
+}
+
+.how-it {
   padding-bottom: 90px;
 }
 
@@ -857,6 +905,84 @@ h6 {
 
 .how-it__text {
   text-align: center;
+}
+
+.hire {
+  background: #555555;
+  padding: 4.5625rem 0rem 9.75rem 0rem;
+}
+
+.hire__block-title {
+  color: #fff;
+}
+
+.hire__form {
+  padding: 50px 4.625rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hire__line {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.hire__wrap-input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+
+.hire__input {
+  background: #555555;
+  border: 1px solid #7D7D7C;
+  width: 100%;
+  min-height: 48px;
+  padding: 0 1.75rem;
+  color: #fff;
+}
+
+.hire__input::-webkit-input-placeholder {
+  color: #A2A2A2;
+}
+
+.hire__input::-moz-placeholder {
+  color: #A2A2A2;
+}
+
+.hire__input:-ms-input-placeholder {
+  color: #A2A2A2;
+}
+
+.hire__input::-ms-input-placeholder {
+  color: #A2A2A2;
+}
+
+.hire__input::placeholder {
+  color: #A2A2A2;
+}
+
+.hire__select {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 1.75rem;
+  background: #555555;
+  border: 1px solid #7D7D7C;
+  color: #A2A2A2;
+}
+
+.hire__button {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .swiper {
@@ -1345,6 +1471,19 @@ h6 {
 
   .works__slider {
     max-height: initial;
+  }
+
+  .hire__form {
+    padding: 3.125rem 0rem 0rem 0rem;
+  }
+
+  .hire__line {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 25px;
+    margin-bottom: 25px;
   }
 }
 
