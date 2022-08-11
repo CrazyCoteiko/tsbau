@@ -1450,6 +1450,10 @@ body::after {
             flex: 0 1 328px;
   }
 
+  .start {
+    padding: 5.625rem 0rem 5.625rem 0rem;
+  }
+
   .start__container {
     -webkit-column-gap: 90px;
        -moz-column-gap: 90px;
@@ -1749,6 +1753,10 @@ body::after {
 
   .footer__maps {
     margin: 0px -0.9375rem;
+  }
+
+  .start {
+    padding: 0rem 0rem 5.625rem 0rem;
   }
 
   .start__container {
