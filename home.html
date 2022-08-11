@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20220808182322">
+	<link rel="stylesheet" href="css/style.min.css?_v=20220811124641">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header">
+		<header data-scroll="120" data-scroll-show="1000" class="header">
 			<div class="header__container">
 				<div class="header__logo"><a class="header__link-logo" href=""><img src="img/header/header-logo.svg" alt="logo"></a></div>
 				<div class="header__phone"><a class="header__call" href="tel:+1(415) 580-5899
@@ -75,7 +75,7 @@
 						<div class="start__suptitle">Handyman Services</div>
 						<div class="start__title">We Take Care
 							of Your Home</div>
-						<button type="button" class="button">Get started</button>
+						<button data-popup="#popup" type="button" class="button">Get started</button>
 					</div>
 					<!-- Оболочка слайдера -->
 
@@ -254,7 +254,7 @@
 
 				</div>
 				<div class="works__bottom">
-					<button type="button" class="button works__button">Get started</button>
+					<button data-popup="#popup" type="button" class="button works__button">Get started</button>
 				</div>
 			</div>
 
@@ -377,17 +377,44 @@
 			</div>
 		</footer>
 	</div>
-	<!-- <div id="popup" aria-hidden="true" class="popup">
-	<div class="popup__wrapper">
-		<div class="popup__content">
-			<button data-close type="button" class="popup__close">Закрыть</button>
-			<div class="popup__text">
+	<div id="popup" aria-hidden="true" class="popup">
+		<div class="popup__wrapper">
+			<div class="popup__content">
+				<button data-close type="button" class="popup__close"><img class="popup__img-close" src="img/popup/exit.svg" alt=""></button>
+				<div class="popup__title">Hire the best professionals</div>
+				<!-- <div class="popup__text">
 				Text
+			</div> -->
+
+				<form class="hire__form" action="">
+					<div class="hire__line">
+						<div class="hire__wrap-input">
+							<input class="hire__input" type="text" placeholder="Name">
+						</div>
+						<div class="hire__wrap-input">
+							<input class="hire__input" type="number" placeholder="Phone Number">
+						</div>
+					</div>
+					<div class="hire__line">
+						<div class="hire__wrap-input">
+							<input class="hire__input" type="text" placeholder="Zip Code*">
+						</div>
+						<div class="hire__wrap-input">
+							<select class="hire__select" name="select" id="">
+								<option value="value1">Service 1</option>
+								<option value="value1">Service 2</option>
+								<option value="value1">Service 3</option>
+								<option value="value1">Service 4</option>
+							</select>
+						</div>
+					</div>
+					<button class="hire__button button">Send now</button>
+				</form>
+
 			</div>
 		</div>
 	</div>
-</div> -->
-	<script src="js/app.min.js?_v=20220808182322"></script>
+	<script src="js/app.min.js?_v=20220811124641"></script>
 </body>
 
 </html>
